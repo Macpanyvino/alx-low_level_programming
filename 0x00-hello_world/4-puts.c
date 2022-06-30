@@ -3,7 +3,7 @@
 /**
  * main - Entry point
  *
- *  * Return: Always 0 (sucess)
+ * Return: Always 0 (sucess)
  *
  * 
  */
@@ -17,5 +17,3 @@
 	return (0);
 
 }
-
-
