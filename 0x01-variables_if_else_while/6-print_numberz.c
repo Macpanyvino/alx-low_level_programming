@@ -12,24 +12,24 @@ int main(void)
 
 {
 
-		int num = ((char)'0');
+	int num = ((char)'0');
 
-			int i;
+	int i;
 
 
 
-				for (i = 0; i < 10; i++)
+	for (i = 0; i < 10; i++)
 
-						{
+	{
 
-									putchar(num);
+		putchar(num);
 
-											num++;
+		num++;
 
-												}
+	}
 
-					putchar('\n');
+		putchar('\n');
 
-						return (0);
+	return (0);
 
 }

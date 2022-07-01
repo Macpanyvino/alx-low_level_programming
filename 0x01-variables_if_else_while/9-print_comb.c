@@ -12,34 +12,31 @@ int main(void)
 
 {
 
-		int num1 = ((char)'0');
+	int num1 = ((char)'0');
 
-			int i;
+	int i;
 
+	for (i = 0; i < 10; i++)
 
+	{
 
-				for (i = 0; i < 10; i++)
+		putchar(num1);
 
-						{
+	if (i < 9)
 
-									putchar(num1);
-
-											if (i < 9)
-
-														{
+	{
 
 																		putchar(',');
 
-																					putchar(' ');
+																		putchar(' ');
+																	}
+		num1++;
 
-																							}
+	}
 
-													num1++;
+		putchar('\n');
 
-														}
 
-					putchar('\n');
-
-						return (0);
+	return (0);
 
 }

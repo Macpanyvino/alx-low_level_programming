@@ -12,36 +12,35 @@ int main(void)
 
 {
 
-		char ch = 'a';
+	char ch = 'a';
+
+	while (ch <= 'z')
+	{
+
+	if (ch == 'q' || ch == 'e')
+
+	{
+
+		;
+
+	}
+
+	else
+
+	{
+
+		putchar(ch);
 
 
+	}
 
-			while (ch <= 'z')
+		ch++;
 
-					{
+	}
 
-								if (ch == 'q' || ch == 'e')
+		putchar('\n');
 
-											{
 
-															;
-
-																	}
-
-										else
-
-													{
-
-																	putchar(ch);
-
-																			}
-
-												ch++;
-
-													}
-
-				putchar('\n');
-
-					return (0);
+	return (0);
 
 }

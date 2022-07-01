@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- *main - Begin Here
+ * main - Begin Here
  *
  * print 0-9 using putchar
  *
@@ -12,24 +12,22 @@ int main(void)
 
 {
 
-		char ch = '0';
+	char ch = '0';
 
-			int i;
+	int i;
+
+	for (i = 0; i < 10; i++)
+
+	{
+		putchar(ch);
+
+		ch++;
 
 
+	}
 
-				for (i = 0; i < 10; i++)
+		putchar('\n');
 
-						{
-
-									putchar(ch);
-
-											ch++;
-
-												}
-
-					putchar('\n');
-
-						return (0);
+	return (0);
 
 }

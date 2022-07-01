@@ -1,35 +1,31 @@
 #include <stdio.h>
 
 /**
+ * main - Begin Here
  *
- * *main - Begin Here
+ * print a-z using putchar
  *
- * *print a-z using putchar
- *
- * *Return: Value 0 (true)
- *
- * **/
+ * Return: Value 0 (true)
+ */
 
 int main(void)
 
 {
 
-		char ch = 'a';
+	char ch = 'a';
 
 
+	while (ch <= 'z')
 
-			while (ch <= 'z')
+	{
 
-					{
+		putchar(ch);
 
-								putchar(ch);
+		ch++;
+	}
 
-										ch++;
+		putchar('\n');
 
-											}
-
-				putchar('\n');
-
-					return (0);
+	return (0);
 
 }
