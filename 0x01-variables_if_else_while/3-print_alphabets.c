@@ -11,33 +11,20 @@ nclude <stdio.h>
 int main(void)
 
 {
-
-	char ch = 'a';
-
-	char CH = 'A';
-
-	while (ch <= 'z')
-
-	{
-
-		putchar(ch);
-
-		ch++;
-
-	}
-
-	while (CH <= 'Z')
+	int ch;
 	
-	{
+		for (ch = 97; ch <= 122; ch++)
+		
+		{
+			putchar(ch);
 
-		putchar(CH);
+		}
+		
+		for (ch = 65; ch <= 90; ch++)
 
-		CH++;
+		{
+			putchar(ch);
 
-	}
-
-		putchar('\n');
-
-	return (0);
-
+			putchar(10); /* this is the ASCII code for new line*/
+		return (0);
 }
