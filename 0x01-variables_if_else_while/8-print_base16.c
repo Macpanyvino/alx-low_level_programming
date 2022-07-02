@@ -11,21 +11,28 @@
 int main(void)
 
 {
+	char ch;
 
-	char num;
+        int n;
 
+        for (n = 48; n <= 57; n++)
 
-	for (num = '0'; num <= '9'; num++)
+        {
 
-		putchar(num);
+	        putchar(n);
 
+	}
 
-	for (num = 'a'; num <= 'f'; num++)
+	for (ch = 'a'; ch <= 'f'; ch++)
 
-		putchar(num);
+	{
 
-		putchar('\n');
+	        putchar(ch);
 
-	return (0);
+	}
+
+	        putchar(10);
+
+        return (0);
 
 }

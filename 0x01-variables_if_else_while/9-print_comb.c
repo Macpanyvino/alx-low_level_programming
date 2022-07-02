@@ -9,32 +9,32 @@
  */
 
 int main(void)
-
 {
 
-	int num1 = ((char)'0');
+	int ch;
 
-	int i;
 
-	for (i = 0; i < 10; i++)
-
-	{
-
-		putchar(num1);
-
-	if (i < 9)
+        for (ch = 48; ch <= 57; ch++)
 
 	{
 
-																		putchar(',');
+	        putchar(ch);
 
-																		putchar(' ');
-																	}
-		num1++;
+	if (ch != 57)
+
+	{
+
+	        putchar(44);
+
+		putchar(32);
+
+	
+	}
 
 	}
 
-		putchar('\n');
+	        putchar(10);
+
 
 
 	return (0);
