@@ -1,3 +1,5 @@
+#include <stdlib.h>
+#include <time.h>
 #include <stdio.h>
 
 /**
@@ -19,7 +21,7 @@ int main(void)
 		for (ch = 65; ch <= 90; ch++)
 		{
 			putchar(ch);
-
+		}
 			putchar(10); /* this is the ASCII code for new line*/
 		return (0);
 }
