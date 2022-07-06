@@ -1,4 +1,5 @@
 #include <stdio.h>
+#define largest 10000000000
 
 /**
  * main - finds and prints the first 98 Fibonacci numbers,
@@ -7,67 +8,64 @@
  *
  * followed by a new line
  *
+ * numbers should be separated with comma and space
+ *
  * Return: ALways 0 (Success)
  */
 
 int main(void)
 {
 
-	unsigned long int i, j, k, j1, j2, k1, k2;
+	unsigned long int fr1 = 0, bk1 = 1, fr2 = 0, bk2 = 2;
 
 
 
-	j = 1;
-
-	k = 2;
+	unsigned long int hold1, hold2, hold3;
 
 
 
-	printf("%lu", j);
+	int count;
 
 
 
-	for (i = 1; i < 91; i++)
+	printf("%lu, %lu, ", bk1, bk2);
+
+	for (count = 2; count < 98; count++)
+	{
+	if (bk1 + bk2 > LARGEST || fr2 > 0 || fr1 > 0)
+
 	{
 
-		printf(", %lu", k);
+		hold1 = (bk1 + bk2) / LARGEST;
 
-		k = k + j;
+		hold2 = (bk1 + bk2) % LARGEST;
 
-		j = k - j;
+		hold3 = fr1 + fr2 + hold1;
+
+		fr1 = fr2, fr2 = hold3;
+
+		bk1 = bk2, bk2 = hold2;
+
+		printf("%lu%010lu", fr2, bk2);
 
 	}
 
-
-
-	j1 = j / 1000000000;
-
-	j2 = j % 1000000000;
-
-	k1 = k / 1000000000;
-
-	k2 = k % 1000000000;
-
-
-
-	for (i = 92; i < 99; ++i)
+	else
 	{
 
-		printf(", %lu", k1 + (k2 / 1000000000));
+		hold2 = bk1 + bk2;
 
-		printf("%lu", k2 % 1000000000);
+		bk1 = bk2, bk2 = hold2;
 
-		k1 = k1 + j1;
-
-		j1 = k1 - j1;
-
-		k2 = k2 + j2;
-
-		j2 = k2 - j2;
+		printf("%lu", bk2);
 
 	}
 
+	if (count != 97)
 
+		printf(", ");
+
+	}
 
 	printf("\n");
 
