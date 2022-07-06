@@ -130,7 +130,7 @@ You are allowed to use the standard library
 
 
 
-The numbers must be separated by comma, followed by a space , 
+The numbers must be separated by comma, followed by a space ,
 
 You are allowed to use the standard library
 
