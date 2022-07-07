@@ -1,29 +1,36 @@
-#include <stdio.h
+#include <stdio.h>
+
 /**
-* main - Highest Prime Numbers
-* Return: Value 0
-*/
+ * main - finds and prints the largest prime factor.
+ *
+ * Return: Always 0.
+ */
+
+
 
 int main(void)
 {
-	long int i, num;
+	long int i, p, fp = 612852475143;
 
-	num = 612852475143;
 
-	for (i  = 2; i <= num; i++)
-	{
-		if (num % i == 0)
-		{
 
-			num = num / i;
+	i = 2;
 
-			i--;
+	while (i <= 612852475143 && fp > 1)
+{
 
-		}
+	p = i;
 
-	}
+	if ((fp % p) == 0)
 
-	printf("%lu\n", i);
+	fp = fp / p;
+
+	else
+
+	i++;
+
+}
+	printf("%ld\n", p);
 
 	return (0);
 
