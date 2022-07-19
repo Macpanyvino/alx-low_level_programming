@@ -1,7 +1,6 @@
 #include "main.h"
 
 /**
- *
  * variableHolder - Holds a value to avoid recursion
  *
  * @num: Holds a value
