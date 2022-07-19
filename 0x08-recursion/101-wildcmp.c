@@ -1,7 +1,6 @@
 #include "main.h"
 
 /**
- *
  * wildcmp - Entry point
  *
  * otherwise retrun 0
